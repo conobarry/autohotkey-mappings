@@ -1,6 +1,48 @@
 
 #If
 
+; For the following hotkeys, remember that Ctrl+Alt is AltGr
+
+; Win+Ctrl+Alt+a sends ä
+#^!a::
+send, ä
+return
+
+; Win+Ctrl+Alt+Shift+a sends Ä
+#^!+a::
+send, Ä
+return
+
+; Win+Ctrl+Alt+o sends ö
+#^!o::
+send, ö
+return
+
+; Win+Ctrl+Alt+Shift+o sends Ö
+#^!+o::
+send, Ö
+return
+
+; Win+Ctrl+Alt+u sends ü
+#^!u::
+send, ü
+return
+
+; Win+Ctrl+Alt+Shift+u sends Ü
+#^!+u::
+send, Ü
+return
+
+; Win+Ctrl+Alt+s sends ß
+#^!s::
+send, ß
+return
+
+; Win+Ctrl+Alt+Shift+s sends ß
+#^!+s::
+send, ß
+return
+
 ; Win+N launches notepad
 #n::
 run, notepad

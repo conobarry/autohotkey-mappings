@@ -1,21 +1,58 @@
 
 #If
 
+#^!a::
+send, ä
+return
+
+#^!+a::
+send, Ä
+return
+
+#^!o::
+send, ö
+return
+
+#^!+o::
+send, Ö
+return
+
+#^!u::
+send, ü
+return
+
+#^!+u::
+send, Ü
+return
+
+#^!s::
+send, ß
+return
+
+#^!+s::
+send, ß
+return
+
 ; Win+N launches notepad
 #n::
 run, notepad
 return
 
+; Win+S sleeps
 #s::
 DllCall("PowrProf\SetSuspendState", "int", 0, "int", 0, "int", 0)
 return
 
+; ----- Autoclicker ----- 
+
 toggle=0
 
+; Win+F10 toggles autoclicker
 #F10::
 autoclick:=!autoclick
 return
 
+; Rapidly clicks left while left click is held
 ~$*LButton::
 While (GetKeyState("Lbutton", "P") and autoclick){
     Click
@@ -23,6 +60,7 @@ While (GetKeyState("Lbutton", "P") and autoclick){
 }
 return
 
+; Rapidly clicks right while right click is held
 ~$*RButton::
 While (GetKeyState("Rbutton", "P") and autoclick){
     Click, right
@@ -30,8 +68,11 @@ While (GetKeyState("Rbutton", "P") and autoclick){
 }
 return
 
+; ----- GUI -----
+
 helpVisible=0
 
+; Win+F12 toggles the help GUI
 #F12::
 helpVisible:=!helpVisible
 If helpVisible
