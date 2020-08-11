@@ -1,12 +1,3 @@
-;Map NumLock to Backspace
-;NumLock::Backspace
-
-;Map capslock to windows key
-CapsLock::LWin
-
-;Ctrl+Caps to Capslock
-^CapsLock::CapsLock
-
 AppsKey & a::
 send, ä
 return
