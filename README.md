@@ -1,6 +1,6 @@
 # autohotkey-mappings
 
-These are my personal autohotkey scripts/mappings.
+These are my personal [AutoHotkey](https://www.autohotkey.com/) scripts/mappings.
 
 ## [multimedia-keys.ahk](https://github.com/conobarry/autohotkey-mappings/blob/master/multimedia-keys.ahk)
 
