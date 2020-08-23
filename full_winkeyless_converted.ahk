@@ -1,3 +1,4 @@
+#SingleInstance Force
 
 #If
 
@@ -89,16 +90,16 @@ If helpVisible
 {
 	helpText =
 (
-F1: Play/Pause
-F2: Previous
-F3: Next
-F4: Toggle Mute
-F5: Volume Down
-F6: Volume Up
-F9: Calculator
-F10: Toggle Auto-Clicker
-F12: Toggle Help
-Pause: Task Manager
+F1: 	Play/Pause
+F2: 	Previous
+F3: 	Next
+F4: 	Toggle Mute
+F5: 	Volume Down
+F6: 	Volume Up
+F9: 	Calculator
+F10: 	Toggle Auto-Clicker
+F12: 	Toggle Help
+Pause: 	Task Manager
 )
 	Gui +LastFound +AlwaysOnTop -Caption +ToolWindow
 	GuiHelpId := WinExist()
